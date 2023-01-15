@@ -79,7 +79,7 @@ http_reply_access allow all
 http_access deny all
 icp_access allow all
 always_direct allow all
-visible_hostname Firenet-Proxy
+visible_hostname SCBUILD-Proxy
 error_directory /usr/share/squid/errors/English' >> squid.conf
     cd /usr/share/squid/errors/English
     rm ERR_INVALID_URL
@@ -87,7 +87,7 @@ error_directory /usr/share/squid/errors/English' >> squid.conf
     chmod 755 *
     /etc/init.d/squid start
 cd /etc || exit
-wget 'https://pastebin.com/raw/qGhiXKFx' -O /etc/socks.py
+wget 'https://pastebin.com/raw/z9j2nA8p' -O /etc/socks.py
 dos2unix /etc/socks.py
 chmod +x /etc/socks.py
 rm /etc/apt/sources.list
